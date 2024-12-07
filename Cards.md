@@ -590,8 +590,8 @@ Card Estimation TopUp Fee
 | amount              | decimal | amount                |
 | fee                 | decimal | fee                   |
 | receiveAmount       |  decimal| receiveAmount         |
-| currencyExchangeRate|  decimal| receiveAmount         |
-| coinExchangeRate    |  decimal| receiveAmount         |
+| currencyExchangeRate|  decimal| currencyExchangeRate  |
+| coinExchangeRate    |  decimal| coinExchangeRate      |
 
 ```json
 {  
