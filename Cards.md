@@ -869,7 +869,7 @@ Card Details
 {  
  "cardNumber": "6200000000000047",
  "cvv": "234",
- "expirationDate": "2025-10-01"
+ "expirationDate": "2909"
 }
 ```
 
