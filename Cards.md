@@ -375,14 +375,14 @@ Apply for a card using the specified program ID.
 |       emergencycontact   |string    |      N         |Emergency contact number                                        |
 |       doctype	           |integer   |      N         |Document type (0 for unspecified)                               |
 |       docid	           |string	  |      N         |Document ID                                                     |
-|       frontdoc	       |string	  |      N         |Front image of the document                                     |
-|       backdoc	           |string	  |      N         |Back image of the document                                      |
+|       frontdoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
+|       backdoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
 |       docexpiredate      |string	  |      N         |Expiry date of the document                                     |
 |       docneveexpire      |integer   |      N         |Indicates if the document has never expired (0 for no)          |
-|       handholdidphoto    |string	  |      N         |Handheld ID photo                                               |
-|       biomatric	       |string    |      N         |Biometric data                                                  |
-|       photo	           |string	  |      N         |Personal photo                                                  |
-|       signimage	       |string	  |      N         |Signature image                                                 |
+|       handholdidphoto    |string	  |      N         |handholdidphoto: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                               |
+|       biomatric	       |string    |      N         |biomatric: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
+|       photo	           |string	  |      N         |photo: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
+|       signimage	       |string	  |      N         |signimage: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                 |
         
 
 
@@ -488,14 +488,14 @@ If kycRequiredWhileApplyCard is false, you can directly call the Bind API after 
 |       emergencycontact   |string    |      N         |Emergency contact number                                        |
 |       doctype	           |integer   |      N         |Document type (0 for unspecified)                               |
 |       docid	           |string	  |      N         |Document ID                                                     |
-|       frontdoc	       |string	  |      N         |Front image of the document                                     |
-|       backdoc	           |string	  |      N         |Back image of the document                                      |
+|       frontdoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
+|       backdoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                      |
 |       docexpiredate      |string	  |      N         |Expiry date of the document                                     |
 |       docneveexpire      |integer   |      N         |Indicates if the document has never expired (0 for no)          |
-|       handholdidphoto    |string	  |      N         |Handheld ID photo                                               |
-|       biomatric	       |string    |      N         |Biometric data                                                  |
-|       photo	           |string	  |      N         |Personal photo                                                  |
-|       signimage	       |string	  |      N         |Signature image                                                 |
+|       handholdidphoto    |string	  |      N         |handholdidphoto: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                               |
+|       biomatric	       |string    |      N         |biomatric: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
+|       photo	           |string	  |      N         |photo: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
+|       signimage	       |string	  |      N         |signimage: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                 |
 
 ```json
 {
@@ -623,7 +623,7 @@ Card Recharge
 
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
-| cardId    | string  |       Y        |  CardId                       |
+| cardId    | string  |       Y        |  CardId                           |
 | amount    | string  |       Y        | TopUp Amount                      |
 
 
@@ -669,8 +669,8 @@ card Set Pin
 
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
-| cardId    | string  |       Y        | CardId                        |
-| signimage | string  |       N        | User signature photo It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
+| cardId    | string  |       Y        | CardId                            |
+| signimage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
 
 
 ```json
@@ -719,7 +719,7 @@ Card Lock
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
 | cardId    | string  |       Y        |  CardId                       |
-| signimage | string  |       N        | User signature photo It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
+| signimage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
 
 ```json
 {    
@@ -762,8 +762,8 @@ Card Unlock
 
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
-| cardId    | string  |       Y        |  CardId                       |
-| signimage | string  |       N        | User signature photo It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
+| cardId    | string  |       Y        |  CardId                           |
+| signimage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
 
 ```json
 {    
