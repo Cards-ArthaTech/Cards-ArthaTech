@@ -584,19 +584,23 @@ Card Estimation TopUp Fee
 
 **Response Example**
 
-| Parameter    | Type    | Description           |
-| :------------|:--------|:----------------------| 
-| cardId       | string  | cardId                |
-| amount       | decimal | amount                |
-| fee          | decimal | fee                   |
-| receiveAmount|  decimal| receiveAmount         |
+| Parameter           | Type    | Description           |
+| :------------------ |:--------|:----------------------| 
+| cardId              | string  | cardId                |
+| amount              | decimal | amount                |
+| fee                 | decimal | fee                   |
+| receiveAmount       |  decimal| receiveAmount         |
+| currencyExchangeRate|  decimal| receiveAmount         |
+| coinExchangeRate    |  decimal| receiveAmount         |
 
 ```json
 {  
   "cardId": "d54f5e69-107d-49d2-bafe-7f837eb85da8",
   "amount": "100",
   "fee": "10",
-  "receiveAmount": "90"
+  "receiveAmount": "90",
+  "currencyExchangeRate":"1",
+  "coinExchangeRate":"1"
 }
 ```
 
@@ -977,6 +981,7 @@ Countries
         "id": "8ee37608-a700-434b-be5d-ba01fd74182c",
         "name": "India",
         "nationality": "Indian",
+        "mobileCode": "91",
         "isoTwo": "IN",
         "isoThree": "IND",
         "isoNumber": "356"
@@ -985,6 +990,7 @@ Countries
         "id": "7aa23818-b812-47f4-af7d-99a20fa4b3de",
         "name": "United States",
         "nationality": "American",
+        "mobileCode": "1",
         "isoTwo": "US",
         "isoThree": "USA",
         "isoNumber": "840"
@@ -993,10 +999,11 @@ Countries
         "id": "2f24d5b0-90a7-4f8d-8ed9-8337cf0e9c82",
         "name": "Canada",
         "nationality": "Canadian",
+        "mobileCode": "1",
         "isoTwo": "CA",
         "isoThree": "CAN",
         "isoNumber": "124"
-    }
+    }	
 ]
 
  ```
