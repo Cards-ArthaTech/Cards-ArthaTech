@@ -51,7 +51,7 @@ Welcome to the ArthaCard developer documentation. An overview of the merchant do
 
 Before you can use the API, Contact ArthaCard API operator to register the merchant account
 
-Request Client token from Artha Merchant platform, and configure the RSA key, callback address on the Merchant platform. IP must be whitelisted to use the services. 
+Request Customer Token from Artha Merchant platform, and configure the RSA key, callback address on the Merchant platform. IP must be whitelisted to use the services. 
 
 **CustomerToken:** This token must be included in the request header when accessing the API, using the format **CustomerToken={CustomerToken}.**
 
@@ -59,7 +59,7 @@ Merchant can use the ArthaCard Merchant platform to perform wallet address check
 
 Recommended to using Test environment for debugging before proceed to the production
 
-## How to generate RSA private and public keys
+## How to generate RSA private and public keys(1024)
 
 **1.** <a href="https://www.webdevsplanet.com/post/how-to-generate-rsa-private-and-public-keys?expand_article=1" target="_blank">In your PC (Recommended)</a>
 
