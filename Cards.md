@@ -179,43 +179,43 @@ Merchant
   "mobile":"9398909890",
   "balances":
   {
-  "currency":"USD",
-    "currencyCode":"USD",
+    "currency":"USDT",
+    "currencyCode":"USDT",
     "network":"TRC-20",
-    "amount":"100"
+    "amount":"100.00"
   },
   "Programs":
   {
   "programId": "550e8400-e29b-41d4-a716-446655440000",
   "bin": 123456,
-  "name": "Premium Card",
+  "name": "Mesh Card",
   "currency": "USD",
-  "type": "Debit",
-  "consumptionMethod": "Online",
-  "cardFee": 15.99,
-  "cardOpeningFee": 5.00,
-  "firstRechargeAmount": 50.00,
-  "cancellationFeeMin": 5.00,
-  "cancellationFeeMax": 25.00,
-  "freightFee": 2.50,
-  "rechargeFeeMin": 1.00,
-  "rechargeFeeMax": 10.00,
-  "transactionFee": 0.50,
-  "atmWithdrawalFee": 2.00,
-  "maintenanceFee": 1.50,
-  "atmBalanceInquiryFee": 0.50,
-  "monthlyRechargeLimit": 1000.00,
-  "dailyRechargeLimit": 300.00,
-  "singleRechargeLimit": 200.00,
-  "perPaymentLimit": 150.00,
-  "atmDailyWithdrawalLimit": 500.00,
-  "spendingLimit": 1000.00,
-  "reviewTime": "2024-10-10T12:00:00Z",
+  "type": "Virtual",
+  "consumptionMethod": "Debit",
+  "cardFee": 15.00,
+  "cardOpeningFee": 10.00,
+  "firstRechargeAmount": 10.00,
+  "cancellationFeeMin": 0.00,
+  "cancellationFeeMax": 0.00,
+  "freightFee": 0.00,
+  "rechargeFeeMin": 10.00,
+  "rechargeFeeMax": 1000.00,
+  "transactionFee": 0.00,
+  "atmWithdrawalFee": 0.00,
+  "maintenanceFee": 0.00,
+  "atmBalanceInquiryFee": 20.00,
+  "monthlyRechargeLimit": 0.00,
+  "dailyRechargeLimit": 0.00,
+  "singleRechargeLimit": 0.00,
+  "perPaymentLimit": 0.00,
+  "atmDailyWithdrawalLimit": 0.00,
+  "spendingLimit": 0.00,
+  "reviewTime": "Within 24 hours",
   "cardState": "Active",
-  "note": "First card issuance",
-  "remarks": "For premium users only",
-  "supportedOperationTypes": "Purchase, Transfer",
-  "cardImage": "https://example.com/images/card.png",
+  "note": "null",
+  "remarks": "null",
+  "supportedOperationTypes": "freeze, unfreeze,cancel",
+  "cardImage": ImageUrl,
   "supportedPlatforms": " ",
   "kycRequiredWhileApplyCard": true,
   "kycRequirements": "string",
@@ -256,41 +256,41 @@ Programdetails
 
 ```JSON
 {
-"programId": "550e8400-e29b-41d4-a716-446655440000",
-  "bin": 123456,
-  "name": "Premium Card",
-  "currency": "USD",
-  "type": "Debit",
-  "consumptionMethod": "Online",
-  "cardFee": 15.99,
-  "cardOpeningFee": 5.00,
-  "firstRechargeAmount": 50.00,
-  "cancellationFeeMin": 5.00,
-  "cancellationFeeMax": 25.00,
-  "freightFee": 2.50,
-  "rechargeFeeMin": 1.00,
-  "rechargeFeeMax": 10.00,
-  "transactionFee": 0.50,
-  "atmWithdrawalFee": 2.00,
-  "maintenanceFee": 1.50,
-  "atmBalanceInquiryFee": 0.50,
-  "monthlyRechargeLimit": 1000.00,
-  "dailyRechargeLimit": 300.00,
-  "singleRechargeLimit": 200.00,
-  "perPaymentLimit": 150.00,
-  "atmDailyWithdrawalLimit": 500.00,
-  "spendingLimit": 1000.00,
-  "reviewTime": "2024-10-10T12:00:00Z",
-  "cardState": "Active",
-  "note": "First card issuance",
-  "remarks": "For premium users only",
-  "supportedOperationTypes": "Purchase, Transfer",
-  "cardImage": "https://example.com/images/card.png",
-  "supportedPlatforms": " ",
-  "kycRequiredWhileApplyCard": true,
-  "kycRequirements": "string",
-  "needPhotoForActiveCard": true,
-  "needPhotoForOperateCard": true
+    "programId": "9ed506e4-9ea7-b1ec-aa90-3a16adaabf4d",
+    "bin": 76532,
+    "name": "MeshCard",
+    "currency": "USD",
+    "type": "Virtual",
+    "consumptionMethod": "Debit",
+    "cardFee": 15.00,
+    "cardOpeningFee": 10.00,
+    "firstRechargeAmount": 10.00,
+    "cancellationFeeMin": 0.00,
+    "cancellationFeeMax": 0.00,
+    "freightFee": 0.00,
+    "rechargeFeeMin": 10.00,
+    "rechargeFeeMax": 10000.00,
+    "transactionFee": 0.00,
+    "atmWithdrawalFee": 0.00,
+    "maintenanceFee": 0.00,
+    "atmBalanceInquiryFee": 20.00,
+    "monthlyRechargeLimit": 0.00,
+    "dailyRechargeLimit": 0.00,
+    "singleRechargeLimit": 0.00,
+    "perPaymentLimit": 0.00,
+    "atmDailyWithdrawalLimit": 0.00,
+    "spendingLimit": 0.00,
+    "reviewTime": "Within 24 hours",
+    "cardState": "Active",
+    "note": null,
+    "remarks": null
+    "supportedOperationTypes": "freeze, unfreeze,cancel",
+    "cardImage": ImageUrl,
+    "supportedPlatforms": "",
+    "kycRequiredWhileApplyCard": true,
+    "kycRequirements": "nokyc",
+    "needPhotoForActiveCard": false,
+    "needPhotoForOperateCard": false
 }
 ```
 
@@ -481,7 +481,7 @@ If kycRequiredWhileApplyCard is false, you can directly call the Bind API after 
 
 ```json
 {
-  "taskId": "5eacfc9c-3c51-4e6c-b286-b4c632e44770",
+  "cardId": "5eacfc9c-3c51-4e6c-b286-b4c632e44770",
   "cardNumber": "3566002020360505",
   "envelopeNo": "264",
    "kyc":  {
@@ -560,7 +560,7 @@ Card Estimation TopUp Fee
 ```json
 {    
   "cardId": "19d1f3e2-2ecf-45d3-a796-4f5a2d557f5d",
-  "amount": "100"
+  "amount": "100.00"
 }
 ```
 
@@ -578,11 +578,11 @@ Card Estimation TopUp Fee
 ```json
 {  
   "cardId": "d54f5e69-107d-49d2-bafe-7f837eb85da8",
-  "amount": "100",
-  "fee": "10",
-  "receiveAmount": "90",
-  "currencyExchangeRate":"1",
-  "coinExchangeRate":"1"
+  "amount": "100.00",
+  "fee": "10.00",
+  "receiveAmount": "90.00",
+  "currencyExchangeRate":"1.00",
+  "coinExchangeRate":"1.00"
 }
 ```
 
@@ -616,7 +616,7 @@ Card Recharge
 ```json
 {    
   "cardId": "c4bf67ad-c353-45ce-9314-19922fdf0c55",
-  "amount": "100"
+  "amount": "100.00"
 }
 
 ```
@@ -937,11 +937,11 @@ Card Balance
 
 ```json 
 {  
-   "availablebalance": "100",
+   "availablebalance": "100.00",
     "cardcurrency": "USD",
     "cardnumber": "12134523",
     "cardtype": "OT",
-    "currentbalance": "50"
+    "currentbalance": "50.00"
 }
 ```
 
