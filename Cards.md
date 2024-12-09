@@ -192,7 +192,6 @@ Merchant
   "currency": "USD",
   "type": "Debit",
   "consumptionMethod": "Online",
-  "isoCountryName": "United States",
   "cardFee": 15.99,
   "cardOpeningFee": 5.00,
   "firstRechargeAmount": 50.00,
@@ -217,17 +216,9 @@ Merchant
   "remarks": "For premium users only",
   "supportedOperationTypes": "Purchase, Transfer",
   "cardImage": "https://example.com/images/card.png",
-  "supportedPlatforms": "iOS, Android, Web",
-  "topUpTokens": [
-    {
-      "token": "USDT",
-      "network": "TRC-20",
-      "address": "000xxx"
-    }
-  ],
+  "supportedPlatforms": " ",
   "kycRequiredWhileApplyCard": true,
   "kycRequirements": "string",
-  "kycType": "string",
   "needPhotoForActiveCard": true,
   "needPhotoForOperateCard": true
 }
@@ -271,7 +262,6 @@ Programdetails
   "currency": "USD",
   "type": "Debit",
   "consumptionMethod": "Online",
-  "isoCountryName": "United States",
   "cardFee": 15.99,
   "cardOpeningFee": 5.00,
   "firstRechargeAmount": 50.00,
@@ -296,17 +286,9 @@ Programdetails
   "remarks": "For premium users only",
   "supportedOperationTypes": "Purchase, Transfer",
   "cardImage": "https://example.com/images/card.png",
-  "supportedPlatforms": "iOS, Android, Web",
-  "topUpTokens": [
-    {
-      "token": "USDT",
-      "network": "TRC-20",
-      "address": "000xxx"
-    }
-  ],
+  "supportedPlatforms": " ",
   "kycRequiredWhileApplyCard": true,
   "kycRequirements": "string",
-  "kycType": "string",
   "needPhotoForActiveCard": true,
   "needPhotoForOperateCard": true
 }
@@ -612,6 +594,9 @@ Card Estimation TopUp Fee
 **Summary**
 
 Card Recharge
+
+**Description**
+ topping up a card, you can specify the fiat amount to be credited to the card. In addition, a fee will be calculated and deducted from the merchant's account (wallet).
 
 **Request**
 
