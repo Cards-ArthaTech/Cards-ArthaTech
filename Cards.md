@@ -596,6 +596,7 @@ Card Estimation TopUp Fee
 Card Recharge
 
 **Description**
+
  topping up a card, you can specify the fiat amount to be credited to the card. In addition, a fee will be calculated and deducted from the merchant's account (wallet).
 
 **Request**
