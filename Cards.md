@@ -53,7 +53,7 @@ Before you can use the API, Contact ArthaCard API operator to register the merch
 
 Request Customer Token from Artha Merchant platform, and configure the RSA key, callback address on the Merchant platform. IP must be whitelisted to use the services. 
 
-**CustomerToken:** This token must be included in the request header when accessing the API, using the format **CustomerToken={CustomerToken}.**
+**customerToken:** This token must be included in the request header when accessing the API, using the format **customerToken={customerToken}.**
 
 Merchant can use the ArthaCard Merchant platform to perform wallet address checking, wallet deposit (USDT)
 
