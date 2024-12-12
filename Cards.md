@@ -75,7 +75,7 @@ Test environment: https://tstcards.artha.work/
 Test environment: https://tstapi.artha.work/api/v1 
 
 
-**customerToken:** This token must be included in the request header when accessing the API, using the format **customerToken={customerToken}**.
+**CustomerToken:** This token must be included in the request header when accessing the API, using the format **CustomerToken={CustomerToken}**.
 
 ## API Specification
 
@@ -93,7 +93,7 @@ To ensure security and verify the sender's identity, all open API requests are a
 |----------------|--------|----------|-------------------------------------------------------------------------------|
 | timestamp      | long   | true     | Unix timestamp (in second)                                                    |
 | nonce          | string | true     | Random 10 characters string                                                   |
-| customerToken   | string | true    | Merchant identification, provided by Artha Cards                              |
+| customerToken   | string | true    | Merchant identification,Gerated By Arth MerchantPaltforms                     |
 | signature      | string | true     | Signature of request body + header request                                    |
 
 
