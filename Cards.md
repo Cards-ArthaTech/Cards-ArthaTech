@@ -75,7 +75,7 @@ Test environment: https://tstcards.artha.work/
 Test environment: https://tstapi.artha.work/api/v1 
 
 
-`customertoken:` This token must be included in the request header when accessing the API, using the format `customertoken={customerToken}`.
+**`customerToken`:** This token must be included in the request header when accessing the API, using the format **`customerToken={customerToken}`**.
 
 ## API Specification
 
