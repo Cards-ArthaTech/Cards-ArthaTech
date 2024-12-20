@@ -355,7 +355,7 @@ Apply for a card using the specified program ID.
 |       countryid	       |string	  |      N         |Country Id  Please call the interface /Countries                |
 |       countryisothree    |string	  |      N         |countryisothree  Please call the interface /Countries           |
 |       emergencycontact   |string    |      N         |Emergency contact number                                        |
-|       doctype	           |integer   |      N         |Document type (0 for unspecified)                               |
+|       doctype	           |integer   |      N         |Document type (1 for passport)                               |
 |       docid	           |string	  |      N         |Document ID                                                     |
 |       frontdoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
 |       backdoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
@@ -468,7 +468,7 @@ If kycRequiredWhileApplyCard is false, you can directly call the Bind API after 
 |       countryid	       |string	  |      N         |Country Id  Please call the interface /Countries                |
 |       countryisothree    |string	  |      N         |countryisothree  Please call the interface /Countries           |
 |       emergencycontact   |string    |      N         |Emergency contact number                                        |
-|       doctype	           |integer   |      N         |Document type (0 for unspecified)                               |
+|       doctype	           |integer   |      N         |Document type (1 for passport)                               |
 |       docid	           |string	  |      N         |Document ID                                                     |
 |       frontdoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
 |       backdoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                      |
@@ -850,12 +850,14 @@ Card Details
 | cardNumber       | string  | cardNumber            |
 | cvv              | string  | cvv                   |
 | expirationDate   | DateTime| expirationDate        |
+| cardstatus       | string  | cardstatus            |
 
 ```json
 {  
  "cardNumber": "6200000000000047",
  "cvv": "234",
- "expirationDate": "2909"
+ "expirationDate": "2909",
+ "cardstatus":"active"
 }
 ```
 
