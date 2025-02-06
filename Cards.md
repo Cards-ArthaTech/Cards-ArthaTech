@@ -339,32 +339,32 @@ Apply for a card using the specified program ID.
 **kyc**
 | Parameter                | Type     | Required or not|Description                                                     |
 | :------------------------|:-------- |:---------------|:-------------------------------------------------------------- |
-|       firstname	       |string	  |      N         |First name of the individual                                    |
-|       lastname	       |string	  |      N         |Last name of the individual                                     |
+|       firstName	       |string	  |      N         |First Name of the individual                                    |
+|       lastName	       |string	  |      N         |Last Name of the individual                                     |
 |       gender	           |integer   |      N         |Gender (1: male, 2: female)                                     |
 |       dob	               |string	  |      N         |Birthday (yyyy-MM-dd)                                           |
-|       nationalityid      |string	  |      N         |Nationalityid.  Please call the interface /Countries             |
+|       nationalityId      |string	  |      N         |nationalityId.  Please call the interface /Countries             |
 |       email	           |string	  |      N         |Email                                                           |
-|       mobilecode	       |string	  |      N         |Mobile code (country code)                                      |
-|       mobile	           |string	  |      N         |Mobile number                                                   |
+|       mobileCode	       |string	  |      N         |Mobile Code (country code)                                      |
+|       mobile	           |string	  |      N         |Mobile Number                                                   |
 |       address	           |string	  |      N         |Residential address                                             |
-|       town	           |string	  |      N         |Town code. Please call the interface /Towns                     |
+|       town	           |string	  |      N         |Town Code. Please call the interface /Towns                     |
 |       city	           |string	  |      N         |           city                                                 |
 |       state	           |string	  |      N         |State or region                                                 |
-|       zipcode	           |string	  |      N         |Postal code                                                     |
-|       countryid	       |string	  |      N         |Country Id  Please call the interface /Countries                |
-|       countryisothree    |string	  |      N         |countryisothree  Please call the interface /Countries           |
-|       emergencycontact   |string    |      N         |Emergency contact number                                        |
-|       doctype	           |integer   |      N         |Document type (1 for passport)                               |
-|       docid	           |string	  |      N         |Document ID                                                     |
-|       frontdoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
-|       backdoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
-|       docexpiredate      |string	  |      N         |Expiry date of the document                                     |
-|       docneveexpire      |integer   |      N         |Indicates if the document has never expired (0 for no)          |
-|       handholdidphoto    |string	  |      N         |handholdidphoto: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                               |
-|       biomatric	       |string    |      N         |biomatric: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
+|       zipCode	           |string	  |      N         |Postal Code                                                     |
+|       countryId	       |string	  |      N         |Country Id  Please call the interface /Countries                |
+|       countryIsoThree    |string	  |      N         |countryIsoThree  Please call the interface /Countries           |
+|       emergencyContact   |string    |      N         |Emergency Contact Number                                        |
+|       docType	           |integer   |      N         |Document Type (1 for passport)                               |
+|       docId	           |string	  |      N         |Document ID                                                     |
+|       frontDoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
+|       backDoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
+|       docExpireDate      |string	  |      N         |Expiry date of the document                                     |
+|       docNeverExpire     |integer   |      N         |Indicates if the document has never expired (0 for no)          |
+|       handHoldIdPhoto    |string	  |      N         |handHoldIdPhoto: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                               |
+|       bioMatric	       |string    |      N         |bioMatric: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
 |       photo	           |string	  |      N         |photo: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
-|       signimage	       |string	  |      N         |signimage: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                 |
+|       signImage	       |string	  |      N         |signImage: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                 |
         
 
 
@@ -373,32 +373,32 @@ Apply for a card using the specified program ID.
 {
   "programId": "667c63ed-9187-4b1a-be64-8190c8d7ab2b",
   "kyc":  {
-    "firstname": "cameron",
-    "lastname": "green",
+    "firstName": "cameron",
+    "lastName": "green",
     "gender": 1,
     "dob": "2000-10-01",
-    "nationalityid": "+91",
+    "nationalityId": "+91",
     "email": "Green@gmail.com",
-    "mobilecode": "+91",
+    "mobileCode": "+91",
     "mobile": "9398889038",
     "address": "hyderbad",
     "town": "Srnagar",
     "city": "city",
     "state": "Ts",
-    "zipcode": "500038",
-    "countryid": "+91",
-    "countryisothree": "countryisothree",
-    "emergencycontact": "98709870987",
-    "doctype": 1,
-    "docid": "1",
-    "frontdoc": "frontimg",
-    "backdoc": "backimg",
-    "docexpiredate": "2025-10-01",
-    "docneveexpire": 0,
-    "handholdidphoto": "10-01-2025",
-    "biomatric": "Finger",
+    "zipCode": "500038",
+    "countryId": "+91",
+    "countryIsoThree": "countryIsoThree",
+    "emergencyContact": "98709870987",
+    "docType": 1,
+    "docId": "1",
+    "frontDoc": "frontimg",
+    "backDoc": "backimg",
+    "docExpireDate": "2025-10-01",
+    "docNeverExpire": 0,
+    "handHoldIdPhoto": "10-01-2025",
+    "bioMatric": "Finger",
     "photo": "img",
-    "signimage": "sigimg"
+    "signImage": "sigimg"
   } 
 }
 ```
@@ -408,13 +408,13 @@ Apply for a card using the specified program ID.
 
 | Parameter | Type    | Description           |
 | :-------- | :-------|:----------------------| 
-| cardId    | string  | cardId                |
+| cardid    | string  | cardId                |
 | status    | string  | status(Success,Failed)|
 | remarks   | string  | Status description    |
 
 ```json
 {    
-  "cardId": "c1b4d39b-7a60-48b7-9bf2-d3fe20d3fdef",
+  "cardid": "c1b4d39b-7a60-48b7-9bf2-d3fe20d3fdef",
   "status": "Success",
   "remarks": "Description"
 }
@@ -446,38 +446,38 @@ If kycRequiredWhileApplyCard is false, you can directly call the Bind API after 
 | cardId                   | string   |       Y        | cardId                                                        |
 | cardNumber               | string   |       Y        |**Required.** Card number                                      |
 |envelopeNo                | string   |       N        |Check if the EnvelopeNoRequired field is required in the program interface.|
-|handholdidphoto           |string    |       Y        | Photo of holding passport and bank card  Cannot exceed 2MB, supports .png, .jpeg, .jpg formats. When the user performs kyc, the card type represented by the parameter cardTypeId is only required when needPhotoForActiveCard=true. See the parameter needPhotoForActiveCard in the interface /MerchantInformation/Merchant.|
+|handHoldIdPhoto           |string    |       Y        | Photo of holding passport and bank card  Cannot exceed 2MB, supports .png, .jpeg, .jpg formats. When the user performs kyc, the card type represented by the parameter cardTypeId is only required when needPhotoForActiveCard=true. See the parameter needPhotoForActiveCard in the interface /MerchantInformation/Merchant.|
 | kyc                      | object   |                |If the Kycrequirements are null, then KYC information is not needed. However, if the Kycrequirements have a value and kycRequiredWhileApplyCard is false, the KYC information must be provided. In this case, ensure that the required fields are passed based on the program's KYC requirements. Otherwise, KYC information is not required.                                |
 
 **kyc**
 | Parameter                | Type     | Required or not|Description                                                     |
 | :------------------------|:-------- |:---------------|:-------------------------------------------------------------- |
-|       firstname	       |string	  |      N         |First name of the individual                                    |
-|       lastname	       |string	  |      N         |Last name of the individual                                     |
+|       firstName	       |string	  |      N         |First name of the individual                                    |
+|       lastName	       |string	  |      N         |Last name of the individual                                     |
 |       gender	           |integer   |      N         |Gender (1: male, 2: female)                                     |
 |       dob	               |string	  |      N         |Birthday (yyyy-MM-dd)                                           |
-|       nationalityid      |string	  |      N         |Nationalityid.  Please call the interface /Countries             |
+|       nationalityId      |string	  |      N         |Nationalityid.  Please call the interface /Countries             |
 |       email	           |string	  |      N         |Email                                                           |
-|       mobilecode	       |string	  |      N         |Mobile code (country code)                                      |
+|       mobileCode	       |string	  |      N         |Mobile code (country code)                                      |
 |       mobile	           |string	  |      N         |Mobile number                                                   |
 |       address	           |string	  |      N         |Residential address                                             |
 |       town	           |string	  |      N         |Town Id  Please call the interface /Towns                       |
 |       city	           |string	  |      N         |City                                                            |
 |       state	           |string	  |      N         |State or region                                                 |
-|       zipcode	           |string	  |      N         |Postal code                                                     |
-|       countryid	       |string	  |      N         |Country Id  Please call the interface /Countries                |
-|       countryisothree    |string	  |      N         |countryisothree  Please call the interface /Countries           |
-|       emergencycontact   |string    |      N         |Emergency contact number                                        |
-|       doctype	           |integer   |      N         |Document type (1 for passport)                               |
-|       docid	           |string	  |      N         |Document ID                                                     |
-|       frontdoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
-|       backdoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                      |
-|       docexpiredate      |string	  |      N         |Expiry date of the document                                     |
-|       docneveexpire      |integer   |      N         |Indicates if the document has never expired (0 for no)          |
-|       handholdidphoto    |string	  |      N         |handholdidphoto: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                               |
-|       biomatric	       |string    |      N         |biomatric: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
+|       zipCode	           |string	  |      N         |Postal code                                                     |
+|       countryId	       |string	  |      N         |Country Id  Please call the interface /Countries                |
+|       countryIsoThree    |string	  |      N         |countryisothree  Please call the interface /Countries           |
+|       emergencyContact   |string    |      N         |Emergency contact number                                        |
+|       docType	           |integer   |      N         |Document type (1 for passport)                               |
+|       docId	           |string	  |      N         |Document ID                                                     |
+|       frontDoc	       |string	  |      N         |frontdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                     |
+|       backDoc	           |string	  |      N         |backdoc: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                      |
+|       docExpireDate      |string	  |      N         |Expiry date of the document                                     |
+|       docNeverExpire      |integer   |      N         |Indicates if the document has never expired (0 for no)          |
+|       handHoldIdPhoto    |string	  |      N         |handholdidphoto: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                               |
+|       bioMatric	       |string    |      N         |biomatric: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
 |       photo	           |string	  |      N         |photo: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                  |
-|       signimage	       |string	  |      N         |signimage: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                 |
+|       signImage	       |string	  |      N         |signimage: Encoded into base64 format. The size of this field should be less than 1 MB. Support：jpg,jpeg,png                                                 |
 
 ```json
 {
@@ -485,32 +485,32 @@ If kycRequiredWhileApplyCard is false, you can directly call the Bind API after 
   "cardNumber": "3566002020360505",
   "envelopeNo": "264",
    "kyc":  {
-    "firstname": "cameron",
-    "lastname": "green",
+    "firstName": "cameron",
+    "lastName": "green",
     "gender": 1,
     "dob": "2000-10-01",
-    "nationalityid": "+91",
+    "nationalityId": "+91",
     "email": "Green@gmail.com",
-    "mobilecode": "+91",
+    "mobileCode": "+91",
     "mobile": "9398889038",
     "address": "hyderbad",
     "town": "Srnagar",
     "city": "city",
     "state": "Ts",
-    "zipcode": "500038",
-    "countryid": "+91",
-    "countryisothree": "countryisothree",
-    "emergencycontact": "98709870987",
-    "doctype": 1,
-    "docid": "1",
-    "frontdoc": "frontimg",
-    "backdoc": "backimg",
-    "docexpiredate": "2025-10-01",
-    "docneveexpire": 0,
-    "handholdidphoto": "10-01-2025",
-    "biomatric": "Finger",
+    "zipCode": "500038",
+    "countryId": "+91",
+    "countryIsoThree": "countryisothree",
+    "emergencyContact": "98709870987",
+    "docType": 1,
+    "docId": "1",
+    "frontDoc": "frontimg",
+    "backDoc": "backimg",
+    "docExpireDate": "2025-10-01",
+    "docNeverExpire": 0,
+    "handHoldIdPhoto": "10-01-2025",
+    "bioMatric": "Finger",
     "photo": "img",
-    "signimage": "sigimg"
+    "signImage": "sigimg"
   }
 }
 
@@ -521,14 +521,14 @@ If kycRequiredWhileApplyCard is false, you can directly call the Bind API after 
 | Parameter | Type    | Description           |
 | :-------- | :-------|:----------------------| 
 | cardId    | string  | cardId                |
-| cardno    | string  | cardno                |
+| cardNo    | string  | cardno                |
 | status    | string  | status(Success,Failed)|
 | remarks   | string  | Status description    |
 
 ```json
 {    
    "cardId": "c1b4d39b-7a60-48b7-9bf2-d3fe20d3fdef",
-   "cardno": "6200000000000005",
+   "cardNo": "6200000000000005",
    "status": "Success",
    "remarks": "CardInProgress"
 }
@@ -656,13 +656,13 @@ card Set Pin
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
 | cardId    | string  |       Y        | CardId                            |
-| signimage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
+| signImage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
 
 
 ```json
 {    
   "cardId": "37e85fe5-8834-4b7c-9797-dd307e9418ef",
-  "signimage": "signimage"
+  "signImage": "signimage"
 }
 
 ```
@@ -705,11 +705,12 @@ Card Lock
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
 | cardId    | string  |       Y        |  CardId                       |
-| signimage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
+| signImage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
 
 ```json
 {    
-  "cardId": "81e38cea-9ea7-4f84-819f-16a40ba1f466"
+  "cardId": "81e38cea-9ea7-4f84-819f-16a40ba1f466",
+  "signImage": "signimage"
 }
 
 ```
@@ -749,11 +750,12 @@ Card Unlock
 | Parameter | Type    |Required or not | Description                       |
 | :-------- | :-------|:-------------- | :-------------------------------- |
 | cardId    | string  |       Y        |  CardId                           |
-| signimage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
+| signImage | string  |       N        | User signature photo Encoded into base64 format. It cannot be larger than 2M and supports the formats .png, .jpeg, and .jpg. It is only required when the card type represented by the bank card is needPhotoForOperateCard=true. See the parameter needPhotoForOperateCard in the interface /MerchantInformation/Merchant.|
 
 ```json
 {    
-  "cardId": "74099243-5467-4e29-9f7f-6984f1db9e01"
+  "cardId": "74099243-5467-4e29-9f7f-6984f1db9e01",
+  "signImage": "signimage"
 }
 
 ```
@@ -850,14 +852,14 @@ Card Details
 | cardNumber       | string  | cardNumber            |
 | cvv              | string  | cvv                   |
 | expirationDate   | DateTime| expirationDate        |
-| cardstatus       | string  | cardstatus            |
+| cardStatus       | string  | cardstatus            |
 
 ```json
 {  
  "cardNumber": "6200000000000047",
  "cvv": "234",
  "expirationDate": "2909",
- "cardstatus":"active"
+ "cardStatus":"active"
 }
 ```
 
@@ -931,19 +933,19 @@ Card Balance
 
 | Parameter               | Type     |Description                                    |
 | :-----------------------| :------- |:----------------------------------------------|
-|     availablebalance   | string    |         availablebalance                     |
-|     cardcurrency        | string   |         cardcurrency                         |
-|     cardnumber          | string   |         cardnumber                           |
-|     cardtype            | string   |         cardtype                             |
-|     currentbalance      | string   |         currentbalance                       |
+|     availableBalance   | string    |         availablebalance                     |
+|     cardCurrency        | string   |         cardcurrency                         |
+|     cardNumber          | string   |         cardnumber                           |
+|     cardType            | string   |         cardtype                             |
+|     currentBalance      | string   |         currentbalance                       |
 
 ```json 
 {  
-   "availablebalance": "100.00",
-    "cardcurrency": "USD",
-    "cardnumber": "12134523",
-    "cardtype": "OT",
-    "currentbalance": "50.00"
+   "availableBalance": "100.00",
+    "cardCurrency": "USD",
+    "cardNumber": "12134523",
+    "cardType": "OT",
+    "currentBalance": "50.00"
 }
 ```
 
@@ -1045,14 +1047,14 @@ Please set the callback notification address in the merchant basic information i
 
 | notifyType  | business       | meaning |
 |:------------|:---------------|:------  |
-| kycstatus   | Bank card      | Card Kyc activation result callback notification  This applies only to physical cards and only if kycRequiredWhileApplyCard is true. Once the KYC is approved, you can proceed to bind the card.|
-| createcard  | Bank card      | Card activation result callback notification|
+| kycStatus   | Bank card      | Card Kyc activation result callback notification  This applies only to physical cards and only if kycRequiredWhileApplyCard is true. Once the KYC is approved, you can proceed to bind the card.|
+| createCard  | Bank card      | Card activation result callback notification|
 | recharge    | Bank card      | Card recharge result callback notification |
 | operation   | Bank card      | Card freeze,unfreeze and cancel callback notification |
 | consume     | Bank card      | Card Consumption callback notification |
 | fee         | Bank card      | Card ConsumptionFee  callback notification |
 | refund      | Bank card      | Card Refund callback notification |
-| opt_code    | Bank card      | 3DS verification |
+| opt_Code    | Bank card      | 3DS verification |
 
 
 ## kycstatus result callback notification
@@ -1062,21 +1064,21 @@ This notification notifyType = kycstatus
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |
+| remarks        | String     |        Remarks            |
 
 **Callback example:**
 
 ```JSON
 {
-  "CardId": "1ecdc168-88e7-3e32-0c99-3a1640e53c67",
-  "TaskId": "1ecdc168-88e7-3e32-0c99-3a1640e53c67",
-  "NotifyType": "kycstatus",
-  "Status": "Success",
-  "Remarks": "Status Description"
+  "taskId": "1ecdc168-88e7-3e32-0c99-3a1640e53c67",
+  "cardId": "1ecdc168-88e7-3e32-0c99-3a1640e53c67",
+  "notifyType": "kycstatus",
+  "status": "Success",
+  "remarks": "Status Description"
 }
 ```
 
@@ -1087,21 +1089,21 @@ This notification notifyType = createcard
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |
+| remarks        | String     |        Remarks            |
 
 **Callback example:**
 
 ```JSON
 {
-  "TaskId": "4754c628-4a01-d836-d805-3a158ab6adf6",
-  "NotifyType": "createcard",
-  "CardId": "4754c628-4a01-d836-d805-3a158ab6adf6",
-  "Status": "SUCCESS",
-  "Remarks": "Status Description"
+  "taskId": "4754c628-4a01-d836-d805-3a158ab6adf6",
+  "cardId": "4754c628-4a01-d836-d805-3a158ab6adf6",
+  "notifyType": "createcard",
+  "status": "SUCCESS",
+  "remarks": "Status Description"
 }
 ```
 
@@ -1128,21 +1130,21 @@ This notification notifyType = recharge
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |
+| remarks        | String     |        Remarks            |
 
 **Callback example:**
 
 ```JSON
 {
-  "CardId": "968d17d5-7e75-931c-ddbb-3a14c9775903",
-  "TaskId": "b31fdd7b-f545-005a-aa28-3a15ed46b5d3",
-  "NotifyType": "recharge",
-  "Status": "Success",
-  "Remarks": "Status Description"
+  "taskId": "968d17d5-7e75-931c-ddbb-3a14c9775903",
+  "cardId": "b31fdd7b-f545-005a-aa28-3a15ed46b5d3",
+  "notifyType": "recharge",
+  "status": "Success",
+  "remarks": "Status Description"
 }
 ```
 **Response parameters:**
@@ -1166,20 +1168,20 @@ This notification notifyType = operation
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |
+| remarks        | String     |        Remarks            |
 
 **Callback example:**
 ```JSON
 {
-  "CardId": "968d17d5-7e75-931c-ddbb-3a14c9775903",
-  "TaskId": "b31fdd7b-f545-005a-aa28-3a15ed46b5d3",
-  "NotifyType": "operation",
-  "Status": "Success",
-  "Remarks": "status Description"
+  "taskId": "968d17d5-7e75-931c-ddbb-3a14c9775903",
+  "cardId": "b31fdd7b-f545-005a-aa28-3a15ed46b5d3",
+  "notifyType": "operation",
+  "status": "Success",
+  "remarks": "status Description"
 }
 ```
 
@@ -1204,24 +1206,24 @@ This notification notifyType = consume
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |                                                                                                                                                     
-| Amount         | Decimal    |        Amount             |
-| Currency       | String     |        Currency           |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |                                                                                        
+| amount         | Decimal    |        Amount             |
+| currency       | String     |        Currency           |
+| remarks        | String     |        remarks            |
 
 **Callback example:**
 ```JSON
 {
-  "CardId": "b2df3227-9716-e841-3827-3a151c8c271e",
-  "TaskId": "cf4a59d3-6248-2565-7b01-3a15b78b7903",
-  "NotifyType": "consume",
+  "taskId": "b2df3227-9716-e841-3827-3a151c8c271e",
+  "cardId": "cf4a59d3-6248-2565-7b01-3a15b78b7903",
+  "notifyType": "consume",
   "Status": "Success",
   "amount": "207.5700",
   "currency": "USD",
-  "Remarks": "Status Description"
+  "remarks": "Status Description"
 }
 ```
 
@@ -1246,25 +1248,25 @@ This notification notifyType = fee
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |                                                                                                                                                     
-| Amount         | Decimal    |        Amount             |
-| Currency       | String     |        Currency           |
+| taskId         | String     |        CardId             |
+| cardId         | String     |        TaskId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |                                                                                        
+| amount         | Decimal    |        Amount             |
+| currency       | String     |        Currency           |
+| remarks        | String     |        Remarks            | 
 
 **Callback example:**
 
 ```JSON
 {
-  "CardId": "0217c3a8-42c9-c449-9a11-3a14f8f1169a",
-  "TaskId": "d95ba737-e3d8-fbe6-4e03-3a15ca96bb8e",
-  "NotifyType": "fee",
+  "taskId": "0217c3a8-42c9-c449-9a11-3a14f8f1169a",
+  "cardId": "d95ba737-e3d8-fbe6-4e03-3a15ca96bb8e",
+  "notifyType": "fee",
   "Status": "Success",
   "amount": "12.2900",
   "currency": "USD",
-  "Remarks": "Status Description"
+  "remarks": "Status Description"
 }
 ```
 
@@ -1289,25 +1291,25 @@ This notification notifyType = refund
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| Status         | String     |        Status             |
-| Remarks        | String     |        Remarks            |                                                                                                                                                     
-| Amount         | Decimal    |        Amount             |
-| Currency       | String     |        Currency           |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |                                                                                     
+| amount         | Decimal    |        Amount             |
+| currency       | String     |        Currency           |
+| remarks        | String     |        Remarks            |    
 
 **Callback example:**
 
 ```JSON
 {
-  "CardId": "135ae96b-c46b-3e18-600f-3a1596f820a6",
-  "TaskId": "b2b8caf1-d457-09fd-276b-3a1597b81f6c",
-  "NotifyType": "refund",
+  "taskId": "135ae96b-c46b-3e18-600f-3a1596f820a6",
+  "cardId": "b2b8caf1-d457-09fd-276b-3a1597b81f6c",
+  "notifyType": "refund",
   "Status": "Success",
   "amount": "1.35",
   "currency": "USD",
-  "Remarks": "Status Description"
+  "remarks": "Status Description"
 }
 ```
 
@@ -1333,19 +1335,19 @@ This notification notifyType = OPT_CODE
 
 | Parameter      | Type       | Description               |
 |:------         |:------     |:--------------------      |
-| CardId         | String     |        CardId             |
-| TaskId         | String     |        TaskId             |
-| NotifyType     | String     |        NotifyType         |
-| OPT_CODE       | String     |        OPT_CODE           |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| opt_Code       | String    |        OPT_CODE           |
 
 **Callback example:**
 
 ```JSON
 {
-  "CardId": "75568818-c4f3-715d-3fa9-3a157ee23b30",
-  "TaskId": "75568818-c4f3-715d-3fa9-3a157ee23b30",
-  "NotifyType": "OPT_CODE",
-  "OPT_CODE": " 971615"
+  "taskId": "75568818-c4f3-715d-3fa9-3a157ee23b30",
+  "cardId": "75568818-c4f3-715d-3fa9-3a157ee23b30",
+  "notifyType": "OPT_CODE",
+  "opt_Code": " 971615"
 }
 ```
 
