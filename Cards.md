@@ -299,18 +299,18 @@ Programdetails
 
 |  KYC Requirements    | Required Fields                                                |
 |:---------------------|:-------------------------------------------------------------- |
-| PassportOnly         |  DocType, DocId, Frontdoc, Backdoc.                            |
-| Passport             |  DocType, DocId, Frontdoc, Backdoc, DocExpireDate, DocNeverExpire|
-| FullNameOnly         |  FirstName, LastName.                                           |
-| FullName             |  FirstName, LastName, Gender, DOB.                              |
-| Comms                |  Email, MobileCode, Mobile.                                     |
-| EmergencyContact     |  emergencycontact.                                              |
-| Address              |  Address.                                                       |
-| FullAddress          |  Address, Town, City, State, ZipCode, CountryId, CountryIsoThree|
-| HandedPassport       |  HandHoldIdPhoto.                                               |
-| Face                 |  Photo.                                                         |
-| Sign                 |  SignImage.                                                     |
-| Biomatric            |  Biomatric.                                                     |
+| PassportOnly         |  docType, docId, frontDoc, backDoc.                            |
+| Passport             |  docType, docId, frontDoc, backDoc, docExpireDate, docNeverExpire|
+| FullNameOnly         |  firstName, lastName.                                           |
+| FullName             |  firstName, lastName, gender, dob.                              |
+| Comms                |  email, mobileCode, mobile.                                     |
+| EmergencyContact     |  emergencyContact.                                              |
+| Address              |  address.                                                       |
+| FullAddress          |  address, town, city, state, zipCode, countryId, countryIsoThree|
+| HandedPassport       |  handHoldIdPhoto.                                               |
+| Face                 |  photo.                                                         |
+| Sign                 |  signImage.                                                     |
+| Biomatric            |  biomatric.                                                     |
 
 
 ## ApplyCard
