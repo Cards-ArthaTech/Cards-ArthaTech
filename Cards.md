@@ -38,7 +38,7 @@
     - [fee callback notification](#fee-callback-notification)
     - [refund callback notification](#refund-callback-notification)
     - [Bank card 3DS verification](#Bank-card-3DS-verification)
-	- [rePlaceCard result callback notification](#rePlaceCard result callback notification)
+	- [rePlaceCard result callback notification](#rePlaceCard-result-callback-notification)
     
 
 
