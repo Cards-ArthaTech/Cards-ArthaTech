@@ -23,6 +23,7 @@
     - [CardDetails](#CardDetails)
     - [PinDetails](#PinDetails)
     - [CardBalance](#CardBalance)
+	- [ReplaceCard](#ReplaceCard)
     - [CardUnFreeze](#CardUnFreeze)
     - [Countries](#Countries)
     - [Towns](#Towns)
@@ -37,6 +38,7 @@
     - [fee callback notification](#fee-callback-notification)
     - [refund callback notification](#refund-callback-notification)
     - [Bank card 3DS verification](#Bank-card-3DS-verification)
+	- [rePlaceCard result callback notification](#rePlaceCard result callback notification)
     
 
 
@@ -949,6 +951,51 @@ Card Balance
 }
 ```
 
+
+## ReplaceCard
+
+**HTTP request**
+
+**post /ReplaceCard**
+
+**Summary**
+
+Replace Card
+
+**Request**
+
+**Headers**
+
+- **Content-Type:** application/json
+
+
+| Parameter | Type     |Required or not |Description                       |
+| :-------- | :------- |:-------------- |:-------------------------------- |
+| cardId    | string   |       Y        | CardId                           |
+
+``` path parameter
+{
+"cardId":"76ddcaab-55c4-46e0-8d80-e7d097bfc1b3"
+}
+```
+
+**Response Example**
+
+| Parameter | Type    | Description           |
+| :-------- | :-------|:----------------------| 
+| cardid    | string  | cardId                |
+| status    | string  | status(Success,Failed,Pending)|
+| remarks   | string  | Status description    |
+
+```json
+{    
+  "cardid": "c1b4d39b-7a60-48b7-9bf2-d3fe20d3fdef",
+  "status": "Success",
+  "remarks": "Description"
+}
+```
+
+
 ## Countries
 
 **HTTP request**
@@ -1357,6 +1404,48 @@ This notification notifyType = OPT_CODE
 |:------|:------|:------|:------|
 | code | Integer | Y | 0.  |
 | message | String | N | Information |
+
+**Response example:**
+```json
+{
+    "code": 0,
+    "message": "success"
+}
+```
+## rePlaceCard result callback notification
+This notification notifyType = replace
+
+**Callback parameters:**
+
+| Parameter      | Type       | Description               |
+|:------         |:------     |:--------------------      |
+| taskId         | String     |        taskId             |
+| cardId         | String     |        cardId             |
+| notifyType     | String     |        NotifyType         |
+| status         | String     |        Status             |                                                                                        
+| amount         | Decimal    |        Amount             |
+| currency       | String     |        Currency           |
+| remarks        | String     |        remarks            |
+
+**Callback example:**
+```JSON
+{
+  "taskId": "b2df3227-9716-e841-3827-3a151c8c271e",
+  "cardId": "cf4a59d3-6248-2565-7b01-3a15b78b7903",
+  "notifyType": "consume",
+  "Status": "Success",
+  "amount": "207.5700",
+  "currency": "USD",
+  "remarks": "Status Description"
+}
+```
+
+**Response parameters:**
+
+| Parameter | Type | Required or not | Meaning |
+|:------|:------|:------|:------|
+| code | Integer | Y | 0. |
+| message | String | N | information |
 
 **Response example:**
 ```json
