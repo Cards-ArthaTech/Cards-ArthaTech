@@ -24,7 +24,6 @@
     - [PinDetails](#PinDetails)
     - [CardBalance](#CardBalance)
 	- [ReplaceCard](#ReplaceCard)
-    - [CardUnFreeze](#CardUnFreeze)
     - [Countries](#Countries)
     - [Towns](#Towns)
 	
