@@ -1432,7 +1432,7 @@ This notification notifyType = replace
 {
   "taskId": "b2df3227-9716-e841-3827-3a151c8c271e",
   "cardId": "cf4a59d3-6248-2565-7b01-3a15b78b7903",
-  "notifyType": "consume",
+  "notifyType": "replace",
   "Status": "Success",
   "amount": "207.5700",
   "currency": "USD",
