@@ -291,7 +291,8 @@ Programdetails
     "kycRequiredWhileApplyCard": true,
     "kycRequirements": "nokyc",
     "needPhotoForActiveCard": false,
-    "needPhotoForOperateCard": false
+    "needPhotoForOperateCard": false,
+    "isConsumeSettlement ": false
 }
 ```
 
@@ -1259,6 +1260,7 @@ This notification notifyType = consume
 | amount         | Decimal    |        Amount             |
 | currency       | String     |        Currency           |
 | remarks        | String     |        remarks            |
+| transactionDate| DateTime   |        transactionDate    |
 
 **Callback example:**
 ```JSON
@@ -1301,6 +1303,7 @@ This notification notifyType = fee
 | amount         | Decimal    |        Amount             |
 | currency       | String     |        Currency           |
 | remarks        | String     |        Remarks            | 
+| transactionDate| DateTime   |        transactionDate    |
 
 **Callback example:**
 
@@ -1344,7 +1347,7 @@ This notification notifyType = refund
 | amount         | Decimal    |        Amount             |
 | currency       | String     |        Currency           |
 | remarks        | String     |        Remarks            |    
-
+| transactionDate| DateTime   |        transactionDate    |
 **Callback example:**
 
 ```JSON
