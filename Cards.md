@@ -1098,7 +1098,9 @@ Please set the callback notification address in the merchant basic information i
 | createCard  | Bank card      | Card activation result callback notification|
 | recharge    | Bank card      | Card recharge result callback notification |
 | operation   | Bank card      | Card freeze,unfreeze and cancel callback notification |
-| consume     | Bank card      | Card Consumption callback notification |
+| consume     | Bank card      | **IsConsumeSettlement** is a field maintained in the **Program Details**.
+  *.* If this field is **false,** the card consumption is processed directly, and no settlement callback will be triggered for this transaction.
+  *.* If this field is **true,** the consumption is authorized first, and a settlement callback will be triggered for this transaction.|
 | fee         | Bank card      | Card ConsumptionFee  callback notification |
 | refund      | Bank card      | Card Refund callback notification |
 | opt_Code    | Bank card      | 3DS verification |
